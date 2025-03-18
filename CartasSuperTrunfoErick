@@ -4,6 +4,7 @@ int main() {
     // dados da primeira carta //
     char Estado1[100];
     char CodigodaCarta1[20];
+    char Nomedacidade1[20];
     int populacao1;
     double areaEmKm21;
     float pib1;
@@ -17,6 +18,9 @@ int main() {
 
     printf("Digite o codigo da carta(Letra do Estado + de 01 a 04): "); // Um valor de alphanumerico
     scanf("%99s", CodigodaCarta1);
+
+    printf("Digite o nome da cidade: "); // sem espacos
+    scanf("%99s", Nomedacidade1);
 
     printf("Populacao: "); // população inteira
     scanf("%d", &populacao1);
@@ -35,6 +39,7 @@ int main() {
     
     char Estado2[100];
     char CodigodaCarta2[20];
+    char NomedaCidade2[20];
     int populacao2;
     double areaemkm22;
     float pib2;
@@ -49,6 +54,9 @@ int main() {
 
     printf("Digite Codigo da Carta(Estado + 01 a 04): ");
     scanf("%99s", CodigodaCarta2);
+
+    printf("Digite o Nome da Cidade: ");
+    scanf("%99s", NomedaCidade2);
 
     printf("Digite valor populacional: ");
     scanf("%d", &populacao2);
@@ -67,6 +75,7 @@ int main() {
 
     printf("Estado: %s\n", Estado1);
     printf("Codigo da carta: %s\n", CodigodaCarta1);
+    printf("Nome da cidade: %s\n", Nomedacidade1);
     printf("Populacao: %d\n", populacao1);
     printf("Area: %.2lf km2\n", areaEmKm21);
     printf("Valor de PiB: %.2f\n", pib1);
@@ -78,6 +87,7 @@ int main() {
 
     printf("Estado: %s\n", Estado2);
     printf("Codigo da carta: %s\n", CodigodaCarta2);
+    printf("Nome da cidade: %s\n", NomedaCidade2);
     printf("Populacao: %d\n", populacao2);
     printf("Area: %.2f km2\n", areaemkm22);
     printf("Valor de PiB: %.2f\n", pib2);
