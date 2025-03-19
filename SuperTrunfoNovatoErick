@@ -2,13 +2,13 @@
 
 int main() {
     // dados da primeira carta //
-    char Estado1[100];
-    char CodigodaCarta1[20];
-    char Nomedacidade1[20];
-    int populacao1;
-    double areaEmKm21;
-    float pib1;
-    int PontosTuristicos1;
+    char Estado1[100], Estado2[100];
+    char CodigodaCarta1[20], CodigodaCarta2[20];
+    char Nomedacidade1[20], NomedaCidade2[20];
+    int populacao1, populacao2;
+    double areaEmKm21, areaemkm22;
+    double pib1, pib2; 
+    int PontosTuristicos1, p_turisticos2;
 
     // infomações da primeira carta //
     printf("----------------Carta1----------------\n");
@@ -16,10 +16,10 @@ int main() {
     printf("Digite o Estado(de A a H): "); // Estado brasileiro
     scanf("%99s", Estado1);
 
-    printf("Digite o codigo da carta(Letra do Estado + de 01 a 04): "); // Um valor de alphanumerico
+    printf("Digite o codigo da carta(Estado + de 01 a 04): "); // Um valor de alphanumerico
     scanf("%99s", CodigodaCarta1);
 
-    printf("Digite o nome da cidade: "); // sem espacos
+    printf("Digite o nome da cidade: ");
     scanf("%99s", Nomedacidade1);
 
     printf("Populacao: "); // população inteira
@@ -29,43 +29,32 @@ int main() {
     scanf("%lf", &areaEmKm21);
 
     printf("Valor de piB: "); // Valor de produto interno bruto da cidade
-    scanf("%f", &pib1);
+    scanf("%lf", &pib1);
 
     printf("Pontos Turisticos: "); // valor pode ser ficticio ou nao
     scanf("%d", &PontosTuristicos1);
-
-    // -------------------------------------------------------------------------
-    // Dados da segunda carta
     
-    char Estado2[100];
-    char CodigodaCarta2[20];
-    char NomedaCidade2[20];
-    int populacao2;
-    double areaemkm22;
-    float pib2;
-    int p_turisticos2;
-
     // Informações da segunda carta
 
     printf("----------------Carta2----------------\n");
 
-    printf("Digite Estado(de A a H): ");
+    printf("Digite o Estado(de A a H): ");
     scanf("%99s", Estado2);
 
-    printf("Digite Codigo da Carta(Estado + 01 a 04): ");
+    printf("Digite o codigo da carta(Estado + 01 a 04): ");
     scanf("%99s", CodigodaCarta2);
 
-    printf("Digite o Nome da Cidade: ");
+    printf("Digite o nome da cidade: ");
     scanf("%99s", NomedaCidade2);
 
-    printf("Digite valor populacional: ");
+    printf("Populacao: ");
     scanf("%d", &populacao2);
 
-    printf("Digite valor de area: ");
+    printf("Area: ");
     scanf("%lf", &areaemkm22);
     
-    printf("Digite piB: ");
-    scanf("%f", &pib2);
+    printf("Valor de piB: ");
+    scanf("%lf", &pib2);
 
     printf("Pontos Turisticos: ");
     scanf("%d", &p_turisticos2);
@@ -91,7 +80,7 @@ int main() {
     printf("Populacao: %d\n", populacao2);
     printf("Area: %.2f km2\n", areaemkm22);
     printf("Valor de PiB: %.2f\n", pib2);
-    printf("Pontos Turisticos: %d", p_turisticos2);
+    printf("Pontos Turisticos: %d\n", p_turisticos2);
 
     return 0;
 
